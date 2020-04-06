@@ -1,0 +1,14 @@
+Hi colleague,
+
+Please find bellow some details about the experiments that I ran last week.
+Hans was very interested in looking at the total force for each case...
+
+Thank you!
+
+Cells chosen were cultured on PAA gels (Poisson ratio ~0.48) coated in collagen with different stiffness:
+
+- low  stiffness: 1.4 kPa.
+	-> xyResolution (microns) 0.35
+
+- high stiffness: 4.5 kPa.
+	-> xyResolution (microns) 0.39
