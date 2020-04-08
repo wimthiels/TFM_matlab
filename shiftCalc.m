@@ -18,9 +18,9 @@ yoffSet = ypeak-size(im_stressed,1);
 xoffSet = xpeak-size(im_stressed,2);
 
 %add subpixel accuracy
-[subppxXPeak, subpxYPeak] = subpxPeakCoord(xpeak,ypeak,c)
-xoffSet = xoffSet + subppxXPeak
-yoffSet = yoffSet + subpxYPeak
+[subppxXPeak, subpxYPeak] = subpxPeakCoord(xpeak,ypeak,c);
+xoffSet = xoffSet + subppxXPeak;
+yoffSet = yoffSet + subpxYPeak;
 
 s = [xoffSet,yoffSet];
 
