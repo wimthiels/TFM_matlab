@@ -3,6 +3,11 @@ clear; close all; clc;
 im_relaxed = imread('/home/wth/Downloads/SYNC/mechanobiology/TFM_assignment/TFM_group_01/ex2/im_beads_relaxed.tif');
 im_stressed = imread('/home/wth/Downloads/SYNC/mechanobiology/TFM_assignment/TFM_group_01/ex2/im_beads_stressed.tif');
 
+%im_relaxed = imread('/home/wth/Downloads/SYNC/mechanobiology/TFM_assignment/im_beads_relaxed_patch.tif');
+%im_stressed = imread('/home/wth/Downloads/SYNC/mechanobiology/TFM_assignment/im_beads_stressed_patch.tif');
+
+
+
 % Plot the bead images (overlapping)
 displayBeadOverlapping(im_relaxed,im_stressed)
 %% Displacement calculation
