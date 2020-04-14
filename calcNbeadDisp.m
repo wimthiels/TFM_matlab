@@ -6,8 +6,8 @@ blkNum(1)=floor(size(im1,2)/blkSize) %x-dim
 blkNum(2)=floor(size(im1,1)/blkSize) %y-dim
 
 %% Define ux and uy
-ux=zeros(blkNum(1),blkNum(2));
-uy=zeros(blkNum(1),blkNum(2));
+ux=zeros(blkNum(2),blkNum(1)); % size = (Y,X)
+uy=zeros(blkNum(2),blkNum(1));
 
 %% Scan im1 and im2 block by block 
 
@@ -25,13 +25,13 @@ for ii= 1:blkNum(1)
             continue
         end
             
-        [s,corrvalue]  = shiftCalc(blkIm1,blkIm2);
+        [s,corrvalue]  = shiftCalc(blkIm1,blkIm2); %s = [xoffSet,yoffSet]
         
         if corrvalue < minCorr
             continue
         end
         
-        ux(ii,jj) = s(1);
-        uy(ii,jj) = s(2);
+        ux(jj,ii) = s(1);
+        uy(jj,ii) = s(2);
      end
  end
